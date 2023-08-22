@@ -1,0 +1,89 @@
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/general';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+img{
+    max-width: 100%;
+}
+ 
+a{
+    text-decoration: none;
+}
+summary{
+    display: block;
+}
+summary::-webkit-details-marker{
+    display: none;
+}
+
+@import 'pages/main';
+@import 'pages/product';
+@import 'pages/catalog';
+@import 'pages/cart';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
