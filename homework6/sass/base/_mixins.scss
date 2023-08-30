@@ -1,0 +1,11 @@
+@mixin menu_burger{
+    span, &:before, &:after{
+        height: 3px;
+        width: 100%;
+        position: absolute;
+        background: #E8E8E8;
+        margin: 0 auto; 
+    }
+}
+
+

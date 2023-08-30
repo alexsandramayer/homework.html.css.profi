@@ -1,0 +1,198 @@
+.slider{
+    height: 777px;
+    position: relative;
+    background: #F7F7F7;
+    border: 1px solid #EAEAEA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__arrow{
+        background: rgba(42, 42, 42, 0.15);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 47px;
+        height: 47px;
+        position: absolute;
+        top: 365px;
+        &:hover path{
+            fill: $colorSelect;
+        }
+        &_left{
+            left: 0;
+        }
+        &_right{
+            right: 0;
+        }
+    }
+}
+
+.product__content{
+    &-block{
+        margin-top: -65px;
+        position: relative;
+        z-index: 10;
+        padding-top: 64px;
+        padding-bottom: 64px;
+        background-color: $colorBase2;
+        border: 1px solid #EAEAEA;
+    }
+    
+    &_subtitle{
+        color: $colorSelect;
+        font-family: $font1;
+        font-size: 14px;
+        font-weight: 300;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &_line{
+        display: block;
+        margin: 0 auto;
+        margin-top: 12px;
+        width: 63px;
+        height: 3px;
+        background-color: $colorSelect;
+    }
+    &_title{
+        margin-top: 12px;
+        color: #4D4D4D;
+        font-family: $font1;
+        font-size: 18px;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &_descr{
+        display: block;
+        margin: 0 auto;
+        margin-top: 48px;
+        max-width: 554px;
+        color: #5E5E5E;
+        font-family: $font1;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    &_price{
+        margin-top: 32px;
+        color: #EF5B70;
+        font-family: $font1;
+        font-size: 24px;
+        font-weight: 300;
+        text-align: center;
+    }
+    &_line-big{
+        display: block;
+        margin: 0 auto;
+        margin-top: 65px;
+        width: 641px;
+        height: 1px;
+        background-color: #EAEAEA;
+    }
+    &_sort{
+        margin-top: 65px;
+        display: flex;
+        align-items:flex-start;
+        justify-content: center;
+        gap: 23px;
+    }
+    &_summary{
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        color: #6F6E6E;
+        font-family: $font1;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    &_button{
+        display: block;
+        margin: 0 auto;
+        margin-top: 48px;
+        width: 212px;
+        height: 48px;
+        border-color: #FF6A6A;
+        background: none;
+        &:hover{
+            background-color: $colorSelect;
+            color: #FFF;
+        }
+    }
+    &_add{
+        display: flex;
+        align-items: center;
+        gap: 23px;
+        padding-left: 24px;
+        color: #F26376;
+        font-family: $font1;
+        font-size: 16px;
+        font-weight: 400;
+        &:hover{
+            background-color: $colorSelect;
+            color: $colorBase2;
+        }
+        &:hover path{
+            fill: $colorBase2;
+        }
+    }
+}
+
+.products__cards{
+    margin-top: 129px;
+    margin-bottom: 129px;
+}
+
+
+@media(min-width: 768px) and (max-width: 1024px){
+    .container__tab{
+        padding-left: calc(50% - 384px);
+        padding-right: calc(50% - 384px);
+    }
+    .product{
+        &__content{
+            &-block{
+                margin-top: 0;
+            }
+        }
+    }
+    .products__item3{
+        display: none;
+    }
+}
+
+
+@media(min-width: 320px) and (max-width: 767px){
+    .slider{
+        height: 454px;
+        padding-bottom: 85px;
+        &__arrow{
+            top: 203px;
+        }
+    }
+    .product__content{
+        &-block{
+            margin-top: 0;
+            border-bottom: 1px solid #EAEAEA;
+        }
+        &_descr{
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        &_line-big{
+            width: 175px;
+        }
+        &_summary{
+            font-size: 10px;
+
+        }
+    }
+    .products__item2{
+        display: none;
+    }
+    .products__cards_mobile{
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+}
+
